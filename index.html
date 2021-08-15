@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cash Counter </title>
+    
+    <link href="style.css" rel="stylesheet" />
+</head>
+<body>
+    <header>
+        <h1>Cash Counter</h1>
+        <p>Enter the Bill Amount and Cash Given by the Customer and know minimum number of notes to return</p>
+    </header>
+    <img class="counter-img" src="./images/counter.jpg"/>
+
+    <div class="container" id="container-bill-amount">
+        <input id="input-bill-amount" type="number" placeholder="Enter the Bill Amount">
+        <button id="btn-proceed-1">Proceed</button>
+    </div>
+    <div class="container" id="container-given-amount">
+    </div>
+
+    <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <table id="table-notes">
+                <tr>
+                    <td>2000</td>
+                    <td>500</td>
+                    <td>200</td>
+                    <td>100</td>
+                    <td>50</td>
+                    <td>20</td>
+                    <td>10</td>
+                    <td>5</td>
+                    <td>1</td>
+                    <td>No. of Notes</td>
+                </tr>
+            </table>
+        </div>
+
+    </div>
+        
+
+    <footer class='footer'>
+        <div class='footer-header'>Social Media Presence</div>
+        <ul class='social-links list-non-bullet'>
+            <li class='list-item-inline'><a class='footer-link link' href="https://github.com/ultronjs">Github</a>
+            </li>
+            <li class='list-item-inline'><a class='footer-link link'
+                    href="www.linkedin.com/in/swapnil-bansal">LinkedIn</a></li>
+            <li class='list-item-inline'><a class='footer-link link'
+                    href="https://www.instagram.com/ul7ron/">Instagram</a></li>
+        </ul>
+    </footer>
+
+
+</body>
+<script src="./app.js"></script>
+</html>
