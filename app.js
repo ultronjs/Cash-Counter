@@ -19,6 +19,7 @@ btnProceed1.addEventListener("click",function(){
   input.id = "input-given-amount";
   button.id = "btn-proceed-2";
   button.innerText = "Proceed";
+  btnProceed1.remove();
   div.appendChild(input);
   div.appendChild(button);
   inputGivenAmount = document.querySelector("#input-given-amount");
@@ -39,10 +40,10 @@ function createTable(){
   var coloumn;
   var coloumnvalue;
   for(i=0;i<noteCounter.length;i++){
-  coloumn = document.createElement("td");
-  coloumnvalue = document.createTextNode(noteCounter[i])
-  coloumn.appendChild(coloumnvalue)
-  document.getElementById("notes-row").appendChild(coloumn);
+    coloumn = document.createElement("td");
+    coloumnvalue = document.createTextNode(noteCounter[i])
+    coloumn.appendChild(coloumnvalue)
+    document.getElementById("notes-row").appendChild(coloumn);
 }
   coloumn = document.createElement("td");
   coloumnvalue = document.createTextNode(sum);
